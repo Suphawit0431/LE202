@@ -10,4 +10,12 @@
 - platformio เป็นการพัฒนาsoftwareแบบเปิด โดยใช้การเขียนลงmicrocontrollerได้หลายแบบ e.g.เขียนแบบ Arduino,ESP8266 Non-OS SDK โดยยังมีboardที่สามามารถนำมาพัฒนาต่อได้ และยังมี Libraries ที่สามารถนำมาadaptได้ทันที ไม่ต้องเขียนใหม่ทั้งหมด
 
 ## สรุปการทดลอง ESP-01 6 การทดลอง
-### example 1 
+### example 1  
+เริ่มโดยเขียนprogramลงไปในmocrocontroller โดยมี2ส่วน คือ setup ซึ่งจะรันแค่ครั้งเดียว และ loop ซึ่งจะรันวน loop เรื่อย ๆ และจะหน่วงเวลา 1 second โดยจะใช้platformio ซึ่งจะบอกข้อมูลของprogramทั้งหมดที่จะ uploadลงไปในmicrocontroller โดยจะต้องกดปุ่ม แล้วเช็คด้วยการกด pio device monitor จะเห็นcount เพิ่มขึ้นทีละ 1 every 1 second
+### example 2
+เมื่อupload programแล้ว จะมีส่วนsetup สำหรับ set wifi โดยส่วนloopก็จะวนloopเพื่อหาwifi โดยเมื่อได้wifiก็จะแสดงผล เมื่อuploadขึ้นแล้วก็จะเริ่มscanหาwifiโดยใช้คำสั่งpio device monitor ก็จะแสดงผล wifi ที่เจอ
+### example 3
+มีoutput port และ input port อย่างละ 2 port คือport 0 and port 1 โดยจะเสียบUSBก่อนแล้วค่อยเสียบcomputerต่อ เมื่อเสียบ io 0 แล้วรันprogram จะทำให้port 0 เป็นoutput และวนloop every 0.5 second โดยจะเพิ่มcountไปเรื่อย ๆ ถ้าจำนวนรอบเป็นเลขคี่ให้ on(LED เปิด) ส่วนคู่เป็นoff(LED ปิด)
+### example 4
+### example 5
+### example 6
