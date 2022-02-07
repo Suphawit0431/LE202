@@ -9,3 +9,5 @@
 - program lang การพัฒนาsoftwareมาใช้ในcomputer เพื่อให้ใช้งานได้ง่ายขึ้น
 - platformio เป็นการพัฒนาsoftwareแบบเปิด โดยใช้การเขียนลงmicrocontrollerได้หลายแบบ e.g.เขียนแบบ Arduino,ESP8266 Non-OS SDK โดยยังมีboardที่สามามารถนำมาพัฒนาต่อได้ และยังมี Libraries ที่สามารถนำมาadaptได้ทันที ไม่ต้องเขียนใหม่ทั้งหมด
 
+## สรุปการทดลอง ESP-01 6 การทดลอง
+### example 1 
