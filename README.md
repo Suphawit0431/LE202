@@ -16,6 +16,10 @@
 เมื่อupload programแล้ว จะมีส่วนsetup สำหรับ set wifi โดยส่วนloopก็จะวนloopเพื่อหาwifi โดยเมื่อได้wifiก็จะแสดงผล เมื่อuploadขึ้นแล้วก็จะเริ่มscanหาwifiโดยใช้คำสั่งpio device monitor ก็จะแสดงผล wifi ที่เจอ
 ### example 3
 มีoutput port และ input port อย่างละ 2 port คือport 0 and port 1 โดยจะเสียบUSBก่อนแล้วค่อยเสียบcomputerต่อ เมื่อเสียบ io 0 แล้วรันprogram จะทำให้port 0 เป็นoutput และวนloop every 0.5 second โดยจะเพิ่มcountไปเรื่อย ๆ ถ้าจำนวนรอบเป็นเลขคี่ให้ on(LED เปิด) ส่วนคู่เป็นoff(LED ปิด)
+### relay
+นำ microcontroller ที่เขียน program ไว้แล้วไปเสียบที่ relay เพื่อให้มีการส่งสัญญาไปที่ control relay เพื่อเอาไว้เปิดและปิด switch
 ### example 4
+มีการนำ input จากภายนอกเข้ามาใน microcontroller set port 0(สีขาว) เป็น input และ port 2(สีเหลือง) เป็น output โดยจะวน loop ถ้า port 0 เป็น 1 จะส่งไป low ไปยัง port 2 ให้ไฟดับ ถ้า port 0 เป็น 0 จะส่ง high ไปยัง port 2 ทำให้ไฟติด
 ### example 5
+ต้องเชื่อมต่อ wifi 
 ### example 6
