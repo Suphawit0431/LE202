@@ -1,5 +1,5 @@
-## วันนี้เราจะมาทำการ install platformIO กัน
-เนื่องจากการติดตั้ง platformIO สามารถทำได้หลายวิธี วันนี้ผมจึงขอหยิบเอาวิธีที่ผมใช้มาแนะนำ 1 วิธีด้วยกัน ไปเริ่มกันเลย
+## วันนี้เราจะมาทำการ install PlatformIO กัน
+เนื่องจากการติดตั้ง PlatformIO สามารถทำได้หลายวิธี วันนี้ผมจึงขอหยิบเอาวิธีที่ผมใช้มาแนะนำ 1 วิธีด้วยกัน ไปเริ่มกันเลย
 
 1. ทำการ install Visual Studio Code จาก https://code.visualstudio.com
 2. install Python จาก https://www.python.org โดย Python ที่จะติดตั้งสำหรับการใช้ PlatformIO ต้องเป็น Python3.5 ขึ้นไป
