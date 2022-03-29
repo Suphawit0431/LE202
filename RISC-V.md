@@ -7,5 +7,11 @@
 จะมีความหมายว่า นำค่าที่อยู่ใน x1  มาระบุ Address บน Memory และดึง 1 byte ใน Address นั้นมาใส่ลงใน x3
 - beq(branch on equal) คือ การเช็คว่าเท่ากันหรือเปล่า ถ้าเท่ากันก็จะกระโดดไปยัง Address ที่ต้องการ ตัวอย่างเช่น beq x3, x0, +16 จะหมายถึง เช็คว่า x3 กับ x1 มีค่าเท่ากันหรือเปล่า ถ้าเท่าก็จะกระโดดไป 10 address(แปลง 16 ฐาน 10 เป็น เลขฐาน 16)
 - sb(store byte) คือ นำข้อมูลที่สนใจใน Genaral-purpose register ไปใส่ใน Address ที่ต้องการ ซึ่งถ้าเป็นในกรณี program ใน EmulsiV จะเป็นการบอกถึง Data ที่ออกมาในบริเวณ Output ซึ่งในส่วนของค่าที่ออกมาจะต้องไปแปลงด้วยการใช้ตาราง Ascii (เลขฐาน 16)
- 
 - jal(jump and link) คือ กระโดดไปตามที่กำหนด ตัวอย่างเช่น jal x0, -16 จะหมายถึง ลดจากตำแหน่งปัจจุบันไป 10address(แปลง 16 ฐาน 10 เป็น 10 ฐาน 16)
+- ASCII TABLE
+ 
+ ![image](https://user-images.githubusercontent.com/98944255/160631589-65ca30ff-cb7b-425d-9b0e-f3fca3559647.png)
+ 
+ #### RISV-V in EmulsiV
+
+ ![image](https://user-images.githubusercontent.com/98944255/160632913-fd9434f6-8d3b-434c-bb05-887050db197a.png)
