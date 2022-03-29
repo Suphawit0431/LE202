@@ -1,0 +1,7 @@
+# จากตัวอย่าง program ใน EmulsiV จะมีส่วนที่น่าสนใจ คือ Memory ซึ่งจะบรรจุตัวเลขฐาน 16 อยู่และจะมีส่วนคำสั่งอยู่ด้วย , Genaral-purpose register, แถบ Input/Output
+### คำสั่งเบื้องต้น
+- addi(add immediate) คือ การบวก โดยจะอ่านจากขวาไปซ้าย ตัวอย่างเช่น addi x1, x0, 32 จะมีความหมายว่า นำ 32(แปลงเป็นเลขฐาน 16 ก่อน) ไปบวก x0(00000000) แล้วนำผลลัพธ์ไปใส่ใน x1
+- lui(load upper immediate) คือ เอาค่า 20 bit แรกของ word ที่มีไปใส่ memory ใน Genaral-purpose ที่ต้องการ ตัวอย่างเช่น lui x2, x0c0000000 จะมีความหมายว่านำ c00000 ไปใส่ใน 20 bit แรกของ x2
+- lbu(load byte unsigned) คือ ดึงค่าใน General-purpose rigister มาแล้วทำค่าที่ได้ไประบุ Address บน Memory สุดท้ายนำไปใส่ใน Memory ที่กำหนด ตัวอย่างเช่น lbu x3, 0(x1) 
+จะมีความหมายว่า นำค่าที่อยู่ใน x1  มาระบุ Address บน Memory และดึง 1 byte ใน Address นั้นมาใส่ลงใน x3
+- beq(branch on equal) คือ การเช็คว่าเท่ากันหรือเปล่า ถ้าเท่ากันก็จะกระโดดไปยัง Address ที่ต้องการ
