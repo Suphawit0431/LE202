@@ -15,5 +15,14 @@
 จากข้างบนเราจะเห็นได้ว่าภาษาที่พัฒนาขึ้นจนมนุษย์เข้าใจได้ง่ายคือ high level language แต่การที่ตัว computer ของเราจะสามารถทำงานได้นั้น computer ต้องแปลง high level เป็น machine language ก่อน ซึ่งจะขอยกตัวอย่างการแปลง high level language เป็น machine language จาก https://godbolt.org
 
 
+โดยตัว website จะแบ่งเป็นฝั่ง high level language และ low level language
+![24F84536-472A-49BB-B1ED-E052B5AE3318](https://user-images.githubusercontent.com/98944255/161790786-8984b090-f41d-4747-a01c-8201d2aa23c9.jpeg)
 
+
+อีกทั้งเราสามารถเลือกภาษาในฝั่ง high leve(ช่องสีแดง) และ low level(ช่องสีม่วง)
+![672AD526-D03B-4421-96F7-0B58260F2DD9](https://user-images.githubusercontent.com/98944255/161793142-f4f4daeb-177c-470b-abc6-ccd37ee7031c.jpeg)
+
+
+นอกจากนี้ ในฝั่งของ low level เรายังสามารถแปลงเป็น machine language ได้ด้วยการ click Compile to binary ในส่วนของ output 
+![1B64D7DA-A6A7-401D-8317-3B24E59F686A](https://user-images.githubusercontent.com/98944255/161794807-603f6051-32c4-4fbd-9c63-5c936f0a5459.jpeg)
 
