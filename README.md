@@ -18,7 +18,7 @@
 
 ## สรุปการทดลอง ESP-01 6 การทดลอง
 ### example 1  
-เริ่มโดยเขียน program ลงไปใน mocrocontroller โดยมี2ส่วน คือ setup ซึ่งจะรันแค่ครั้งเดียว และ loop ซึ่งจะรันวน loop เรื่อย ๆ และจะหน่วงเวลา 1 second โดยจะใช้ platformio ซึ่งจะบอกข้อมูลของ program ทั้งหมดที่จะ upload ลงไปใน microcontroller โดยจะต้องกดปุ่ม แล้วเช็คด้วยการกด pio device monitor จะเห็น count เพิ่มขึ้นทีละ 1 every 1 second
+เริ่มโดยเขียน program ลงไปใน microcontroller โดยมี2ส่วน คือ setup ซึ่งจะรันแค่ครั้งเดียว และ loop ซึ่งจะรันวน loop เรื่อย ๆ และจะหน่วงเวลา 1 second โดยจะใช้ platformio ซึ่งจะบอกข้อมูลของ program ทั้งหมดที่จะ upload ลงไปใน microcontroller โดยจะต้องกดปุ่ม แล้วเช็คด้วยการกด pio device monitor จะเห็น count เพิ่มขึ้นทีละ 1 every 1 second
 ### example 2
 เมื่อ upload program แล้ว จะมีส่วน setup สำหรับ set wifi โดยส่วน loop ก็จะวน loop เพื่อหา wifi โดยเมื่อได้ wifi ก็จะแสดงผล เมื่อ upload ขึ้นแล้วก็จะเริ่ม scan หา wifi โดยใช้คำสั่ง pio device monitor ก็จะแสดงผล wifi ที่เจอ
 ### example 3
